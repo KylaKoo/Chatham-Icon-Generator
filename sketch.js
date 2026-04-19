@@ -17,10 +17,15 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(windowWidth, windowHeight);
   pixelDensity(1);
   noStroke();
-  loadAndProcessImage("Plane"); // 默认图像
+  loadAndProcessImage("Plane");
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 
   // 控制面板
   let controlPanel = createDiv();
