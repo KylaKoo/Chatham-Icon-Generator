@@ -17,7 +17,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(1200,800);
   pixelDensity(1);
   noStroke();
   loadAndProcessImage("Plane");
